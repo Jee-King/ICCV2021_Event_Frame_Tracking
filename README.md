@@ -1,4 +1,4 @@
-# Event_Frame_Tracking
+# ICCV2021_Event_Frame_Tracking
 
 ## Object Tracking by Jointly Exploiting Frame and Event Domain (ICCV 2021)
 
