@@ -20,6 +20,6 @@ Inspired by the complementarity between conventional frame-based and bio-inspire
 
 ## Test
 1. Download test [dataset](https://zhangjiqing.com/dataset/)
-2. Download the pretrained model, and put it into ``` pytracing_fe108/pytracking/networks ```
-3. Change your own path in ``` pytracing_fe108/pytracking/evaluation/local.py ```
-4. run ``` python run_tracker.py dimp prdimp18 --dataset eotb --sequence val ```, the predicted bbox will be saved in ``` pytracing_fe108/pytracking/tracking_results ```. ```cd notebooks ```, and using jupyter to the SR and PR scores.
+2. Download the pretrained model, and put it into ``` pytracking_fe108/pytracking/networks ```
+3. Change your own path in ``` pytracking_fe108/pytracking/evaluation/local.py ```
+4. run ``` python run_tracker.py dimp prdimp18 --dataset eotb --sequence val ```, the predicted bbox will be saved in ``` pytracking_fe108/pytracking/tracking_results ```. Using jupyter in ```notebooks``` to the SR and PR scores.
