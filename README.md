@@ -23,3 +23,17 @@ Inspired by the complementarity between conventional frame-based and bio-inspire
 2. Download the pretrained model, and put it into ``` pytracking_fe108/pytracking/networks ```
 3. Change your own path in ``` pytracking_fe108/pytracking/evaluation/local.py ```
 4. run ``` python run_tracker.py dimp prdimp18 --dataset eotb --sequence val ```, the predicted bbox will be saved in ``` pytracking_fe108/pytracking/tracking_results ```. Using jupyter in ```notebooks``` to see the SR and PR scores.
+
+## Citation
+If you use this code, please cite:
+
+```
+@InProceedings{Zhang_2021_ICCV,
+    author = {Jiqing Zhang, Xin Yang, Yingkai Fu, Xiaopeng Wei, Baocai Yin, Bo Dong},
+    title = {Object Tracking by Jointly Exploiting Frame and Event Domain},
+    booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
+    year = {2021}
+} ```
+
+## Acknowledgments
+* Thanks for the great [visionml/pytracking](https://github.com/visionml/pytracking) module.
