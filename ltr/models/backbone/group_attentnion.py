@@ -13,11 +13,11 @@ class SpatialGroupEnhance(nn.Module):
         self.bias = Parameter(torch.ones(1, groups, 1, 1))
         self.sig = nn.Sigmoid()
 
-    def forward(self, x):  # (b, c, h, w)
+    def forward(self, x):
         b, c, h, w = x.size()
-        x = x.view(b * self.groups, -1, h, w)  # (b*32, c', h, w)
+        x = x.view(b * self.groups, -1, h, w)  
         xn = x * self.avg_pool(x)
-        xn = xn.sum(dim=1, keepdim=True)  # (b*32, 1, h, w)
+        xn = xn.sum(dim=1, keepdim=True) 
         t = xn.view(b * self.groups, -1)
         t = t - t.mean(dim=1, keepdim=True)
         std = t.std(dim=1, keepdim=True) + 1e-5
@@ -77,6 +77,7 @@ class Motion_Attention(nn.Module):
     def __init__(self):
         super(Motion_Attention, self).__init__()
         self.ga = Group_Attention()  # share params
+        
         ## the learnable parameters are sensitive, performance is dependent on the initialization value
         # self.fw1_1 = Parameter(torch.FloatTensor(1), requires_grad=True)
         # self.fw1_2 = Parameter(torch.FloatTensor(1), requires_grad=True)
@@ -101,8 +102,6 @@ class Motion_Attention(nn.Module):
         x2 = x1_2 + x2_2 + x3_2
         # x1 = self.fw1_1 * x1_1 + self.fw1_2 * x2_1 + self.fw1_3 * x3_1
         # x2 = self.fw2_1 * x1_2 + self.fw2_2 * x2_2 + self.fw2_3 * x3_2
-        #print(self.fw1_1.item(), self.fw1_2.item(), self.fw1_3.item())
-
         return x1, x2
 
 
