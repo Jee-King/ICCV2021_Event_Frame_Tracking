@@ -6,7 +6,7 @@ Jiqing Zhang, Xin Yang, Yingkai Fu, Xiaopeng Wei, Baocai Yin, Bo Dong
 
 [[project](https://zhangjiqing.com/publication/object-tracking-by-jointly-exploiting-frame-and-event-domain-iccv-2021/)] [paper] [[dataset](https://zhangjiqing.com/dataset/)]
 
-The code is built on visionml/pytracking(https://github.com/visionml/pytracking)  and tested on Ubuntu 18.04 environment with RTX 3090 GPUs.
+The code is built on [visionml/pytracking](https://github.com/visionml/pytracking)  and tested on Ubuntu 18.04 environment with RTX 3090 GPUs.
 
 ## Abstract
 
