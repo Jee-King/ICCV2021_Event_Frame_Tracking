@@ -78,7 +78,10 @@ class Motion_Attention(nn.Module):
         super(Motion_Attention, self).__init__()
         self.ga = Group_Attention()  # share params
         
-        ## the learnable parameters are sensitive, performance is dependent on the initialization value
+        ## the learnable parameters are sensitive, performance is dependent on the initialization value.
+        ## by refining EAB and CDMS, compared with learnable parameters, we can further obtain the similar performance with all w = 1.
+        ## therefore, here we provide the model without learnable parameters.
+        
         # self.fw1_1 = Parameter(torch.FloatTensor(1), requires_grad=True)
         # self.fw1_2 = Parameter(torch.FloatTensor(1), requires_grad=True)
         # self.fw1_3 = Parameter(torch.FloatTensor(1), requires_grad=True)
