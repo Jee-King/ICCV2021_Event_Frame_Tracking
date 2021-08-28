@@ -18,5 +18,5 @@ Inspired by the complementarity between conventional frame-based and bio-inspire
 
 ## Test
 1. Download test dataset
-2. Download the pretrained model
+2. Download the pretrained model, and 
 3. Change your own path in pytracing_fe108/pytracking/evaluation/local.py
