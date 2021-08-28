@@ -33,7 +33,8 @@ If you use this code, please cite:
     title = {Object Tracking by Jointly Exploiting Frame and Event Domain},
     booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
     year = {2021}
-} ```
+} 
+```
 
 ## Acknowledgments
 * Thanks for the great [visionml/pytracking](https://github.com/visionml/pytracking) module.
