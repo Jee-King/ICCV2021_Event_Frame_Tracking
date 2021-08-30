@@ -2,7 +2,7 @@
 
 ## Object Tracking by Jointly Exploiting Frame and Event Domain (ICCV 2021)
 
-Jiqing Zhang, Xin Yang, Yingkai Fu, Xiaopeng Wei, Baocai Yin, Bo Dong
+[Jiqing Zhang](https://zhangjiqing.com), [Xin Yang](https://xinyangdut.github.io/), Yingkai Fu, Xiaopeng Wei, Baocai Yin, [Bo Dong](https://dongshuhao.github.io/)
 
 [[project](https://zhangjiqing.com/publication/object-tracking-by-jointly-exploiting-frame-and-event-domain-iccv-2021/)] [paper] [[dataset](https://zhangjiqing.com/dataset/)]
 
@@ -16,6 +16,8 @@ Inspired by the complementarity between conventional frame-based and bio-inspire
 
 * CUDA == 11.1
 
+* Python == 3.8
+ 
 * Pytorch == '1.7.0+cu110'
 
 ## Test
