@@ -30,12 +30,13 @@ Inspired by the complementarity between conventional frame-based and bio-inspire
 If you use this code, please cite:
 
 ```
-@InProceedings{Zhang_2021_ICCV,
-    author = {Jiqing Zhang, Xin Yang, Yingkai Fu, Xiaopeng Wei, Baocai Yin, Bo Dong},
-    title = {Object Tracking by Jointly Exploiting Frame and Event Domain},
-    booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
-    year = {2021}
-} 
+@inproceedings{zhang2021object,
+  title={Object Tracking by Jointly Exploiting Frame and Event Domain},
+  author={Zhang, Jiqing and Yang, Xin and Fu, Yingkai and Wei, Xiaopeng and Yin, Baocai and Dong, Bo},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={13043--13052},
+  year={2021}
+}
 ```
 
 ## Acknowledgments
